@@ -8,7 +8,7 @@ def mainLoop():
     print("Enter Master Password")
     masterPassEntry = getpass()
     masterPassInBytes = str.encode(masterPassEntry)
-    if zlib.adler32(masterPassInBytes) == <ADLER32 HASHED PASSWORD>:
+    if zlib.adler32(masterPassInBytes) == ADLER32 HASHED PASSWORD:
         interface()
     else:
         os.system("clear")
